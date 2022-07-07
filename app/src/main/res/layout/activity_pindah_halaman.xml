@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PindahHalaman">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="match_parent"
+                android:layout_height="278dp" />
+
+
+            <TextView
+                android:id="@+id/tv_nama_resep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:layout_marginLeft="20.5dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/nama_resep"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_deskripsi"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.5dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="gravity"
+                android:text="@string/detail" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

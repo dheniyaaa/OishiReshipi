@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="158dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        tools:src="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:layout_toRightOf="@+id/img_item_photo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="@string/Recipe_name" />
+
+    <TextView
+        android:id="@+id/tv_item_detail"
+        android:layout_width="224dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/layout_button"
+        android:layout_below="@+id/tv_item_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:layout_toRightOf="@+id/img_item_photo"
+        android:ellipsize="end"
+        android:textStyle="normal"
+        tools:text="@string/detail" />
+
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="18dp"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:layout_toRightOf="@+id/img_item_photo"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_set_more"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/more"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

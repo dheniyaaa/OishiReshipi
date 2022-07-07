@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="about">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="147dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/photoku" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="#FFC107" />
+
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:ems="18"
+            android:inputType="textEmailAddress"
+            android:text="@string/namaku"
+            android:textColor="@color/abuMuda"
+            android:textSize="13sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="45dp"
+            android:src="@android:drawable/sym_action_email"
+            app:tint="#FFC107" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="18"
+            android:inputType="textEmailAddress"
+            android:text="rinakartikawati1004@gmail.com"
+            android:textColor="@color/abuMuda"
+            android:textSize="13sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="300dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="36dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:src="@android:drawable/stat_sys_phone_call"
+            app:tint="#FFC107" />
+
+        <EditText
+            android:id="@+id/editTextPhone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ems="18"
+            android:inputType="phone"
+            android:text="085856660213"
+            android:textColor="@color/abuMuda"
+            android:textSize="13sp" />
+    </TableRow>
+
+
+</RelativeLayout>
